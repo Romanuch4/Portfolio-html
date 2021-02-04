@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Web-Site</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="">
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="apple-touch-icon" href="#" />
+  <link rel="apple-touch-icon" sizes="72x72" href="#" />
+  <link rel="apple-touch-icon" sizes="114x114" href="#" />
+  <link href="#" rel='alternate' title='Sitemap' type='application/rss+xml' />
+  <link rel="canonical" href="#" />
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#36A26B">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#36A26B">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
+  <!--Иконка в браузере-->
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <!-- CSS, fonts -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<!-- img src = img data-src -->
+<!-- <a href= '/share' rel="noopener noreferrer" target="_blank"/> -->
+
+<body class="overflow">
+  <!--Preloader-->
+  <div class="preloader">
+    <svg class="preloader__svg">
+      <filter id="gooey">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+        <feColorMatrix values="
+      1 0 0 0 0 
+      0 1 0 0 0 
+      0 0 1 0 0 
+      0 0 0 20 -10 ">
+        </feColorMatrix>
+      </filter>
+    </svg>
+    <div class="preloader__content">
+      <span class="preloader__item" style="--i:1;"></span>
+      <span class="preloader__item" style="--i:2;"></span>
+      <span class="preloader__item" style="--i:3;"></span>
+      <span class="preloader__item" style="--i:4;"></span>
+      <span class="preloader__item" style="--i:5;"></span>
+      <span class="preloader__item" style="--i:6;"></span>
+      <span class="preloader__item" style="--i:7;"></span>
+      <span class="preloader__item" style="--i:8;"></span>
+      <span class="preloader__item rotate" style="--j:0;"></span>
+      <span class="preloader__item rotate" style="--j:1;"></span>
+      <span class="preloader__item rotate" style="--j:2;"></span>
+      <span class="preloader__item rotate" style="--j:3;"></span>
+      <span class="preloader__item rotate" style="--j:4;"></span>
+    </div>
+  </div>
+  <!--Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#0">
+          <picture class="logo__img">
+            <source srcset="./images/logo-mobile.png" media="(max-width: 600px)" />
+            <img src="./images/logo.png" alt="" />
+          </picture>
+        </a>
+        <nav class="menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#1">
+                О ДРОНЕ
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#2">
+                ПРЕИМУЩЕСТВА
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#3">
+                ХАРАКТЕРИСТИКИ
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#4">
+                ВОПРОСЫ
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#5">
+                КОНТАКТЫ
+              </a>
+            </li>
+            <li class="menu__list-phone">
+              <a class="header__phone-menu" href="tel:80505676767">8 (050) 567 67 67</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__info">
+          <button class="header__btn">купить</button>
+          <a class="header__phone" href="tel:80505676767">8 (050) 567 67 67</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="scroll-container">
+    <!--==================== 1 screen ====================-->
+    <section id="0" class="page-section top">
+      <div class="page-section__wrapper top__wrapper">
+        <div class="container">
+          <div class="top__inner">
+            <h1 class="top__title">
+              Mavic 2 Pro
+            </h1>
+            <img class="top__inner-img" src="./images/mavic.png" alt="" />
+            <p class="top__text">
+              Квадрокоптер Dji Mavic 2 Pro с профессиональной камерой Hasselblad
+            </p>
+            <ul class="top__social-list">
+              <li class="top__social-item">
+                <a href="#" class="top__social-link">
+                  <img src="./images/facebook.svg" alt="">
+                </a>
+              </li>
+              <li class="top__social-item">
+                <a href="#" class="top__social-link">
+                  <img src="./images/youtube.svg" alt="">
+                </a>
+              </li>
+              <li class="top__social-item">
+                <a href="#" class="top__social-link">
+                  <img src="./images/instagram.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a class="scroll__btn__link" href="#1">
+            <img src="./images/arrow-down.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== 2 screen ====================-->
+    <section class="page-section products">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h2 class="title products__title">
+            Что такое Mavic 2 Pro?
+          </h2>
+          <div class="products__inner">
+            <div class="products__text">
+              <p class="products__text-p">
+                Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. Дрон обладает всеми лучшими
+                технологиями
+                DJI, он преобразит мир аэросъемки.
+              </p>
+              <p class="products__text-p">
+                Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. Камера L1D-20c работает по уникальной
+                технологии Hasselblad Natural Colour Solution (HNCS)5, позволяющей пользователям делать великолепные
+                снимки
+                с воздуха с разрешением в 20 мегапикселей и потрясающими цветами.
+              </p>
+            </div>
+            <div class="products__slider-box">
+              <p class="products__slider-text">
+                Лучшая беспилотная
+                технология аэросъемки
+              </p>
+              <div class="products__slider">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                    <div class="products__slider-item swiper-slide">
+                      <img class="products__slider-img" src="./images/slider-1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="products__slider-arrows">
+                  <div class="swiper-button-prev">
+                    <img src="./images/arrow-left.svg" alt="">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="./images/arrow-right.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a class="scroll__btn__link" href="#2">
+            <img src="./images/arrow-down.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== 3 screen ====================-->
+    <section class="page-section benefits">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h2 class="title benefits__title">
+            Преимущества
+          </h2>
+          <div class="benefits__items">
+            <div class="benefits__item benefits__item-1">
+              <div class="benefits__num">1</div>
+              <div class="benefits__img">
+                <img src="./images/benefit-1.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h3 class="benefits__info-title">
+                  Интеллектуальные
+                  режимы
+                </h3>
+                <p class="benefits__info-text">
+                  Mavic 2 унаследовал 6 стандартных режимов интеллектуальной съемки
+                  QuickShot:Roket /Dronie /Circle /Helix /Boomerang /Asteroid.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item benefits__item-2">
+              <div class="benefits__num">2</div>
+              <div class="benefits__img">
+                <img src="./images/benefit-2.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h3 class="benefits__info-title">
+                  Active Track 2.0
+                </h3>
+                <p class="benefits__info-text">
+                  Усовершенствованный режим второго поколения распознаёт и отслеживает объекты ещё точнее, быстрее и
+                  умнее.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item benefits__item-3">
+              <div class="benefits__num">3</div>
+              <div class="benefits__img">
+                <img src="./images/benefit-3.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h3 class="benefits__info-title">
+                  Панорамная
+                  съемка
+                </h3>
+                <p class="benefits__info-text">
+                  Mavic 2 поддерживает 4 режима
+                  панорамной съёмки: сферическая,
+                  180 градусов,
+                  горизонтальная, вертикальная
+                </p>
+              </div>
+            </div>
+
+            <div class="benefits__item benefits__item-4">
+              <div class="benefits__num">4</div>
+              <div class="benefits__img">
+                <img src="./images/benefit-4.jpg" alt="">
+              </div>
+              <div class="benefits__info">
+                <h3 class="benefits__info-title">
+                  Крутая
+                  камера!
+                </h3>
+                <p class="benefits__info-text">
+                  Технология Hyperlapse в четырёх режимах исполнения.
+                  Улучшенный фото режим HDR
+                  Функция HyperLight для съёмки в условиях слабого освещения
+                  4К съёмка
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a class="scroll__btn__link" href="#3">
+            <img src="./images/arrow-down.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== 4 screen ====================-->
+    <section class="page-section specification">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h2 class="title specification__title">
+            Характеристики
+          </h2>
+          <div class="specification__inner">
+            <div class="specification__item">
+              <div class="specification__box specification__box-1">
+                <h3 class="specification__box-title">
+                  Dlog-M 10 бит
+                </h3>
+                <p class="specification__box-text">
+                  Mavic 2 Pro поддерживает цветовой профиль Dlog-M 10 бит с более широким динамическим диапазоном,
+                  дающим
+                  больше возможностей для цветокоррекции.
+                </p>
+              </div>
+
+              <div class="specification__box specification__box-2">
+                <h3 class="specification__box-title">
+                  Камера Hasselblad
+                </h3>
+                <p class="specification__box-text">
+                  Камера Hasselblad L1D-20С
+                  известны эргономичным дизайном
+                  и превосходным качеством изображений.
+                </p>
+              </div>
+            </div>
+            <div class="specification__item specification__item--img">
+              <img src="./images/mavic.png" alt="" />
+            </div>
+            <div class="specification__item">
+              <div class="specification__box specification__box-3">
+                <h3 class="specification__box-title">
+                  Матрица CMOS 1
+                </h3>
+                <p class="specification__box-text">
+                  Зона активной работы новой 1-дюймовой матрицы CMOS в четыре раза превышает показатели Mavic Pro
+                </p>
+              </div>
+
+              <div class="specification__box specification__box-4">
+                <h3 class="specification__box-title">
+                  Видео HDR
+                </h3>
+                <p class="specification__box-text">
+                  Благодаря поддержке видео 4K HDR 10 бит, Mavic 2 Pro можно подсоединить к совместимому с HLG 4K ТВ и
+                  просматривать запись в полном цветовом спектре
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a class="scroll__btn__link" href="#4">
+            <img src="./images/arrow-down.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== 5 screen ====================-->
+    <section class="page-section questions">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h2 class="title">
+            Остались вопросы?
+          </h2>
+          <div class="questions__items">
+            <div class="questions__item questions__item--active">
+              <h3 class="questions__item-title" tabindex="0">
+                Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?
+              </h3>
+              <p class="questions__item-text">
+                В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость,
+                уровень
+                шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                Hyperlapse (гиперлапс).
+              </p>
+            </div>
+
+            <div class="questions__item">
+              <h3 class="questions__item-title" tabindex="0">
+                Чем Mavic 2 лучше Mavic Pro?
+              </h3>
+              <p class="questions__item-text">
+                В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость,
+                уровень
+                шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                Hyperlapse (гиперлапс).
+              </p>
+            </div>
+
+            <div class="questions__item">
+              <h3 class="questions__item-title" tabindex="0">
+                Можно ли подключить Mavic 2 к очкам DJI Goggles?
+              </h3>
+              <p class="questions__item-text">
+                В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость,
+                уровень
+                шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                Hyperlapse (гиперлапс).
+              </p>
+            </div>
+
+            <div class="questions__item">
+              <h3 class="questions__item-title" tabindex="0">
+                Является ли Mavic 2 водонепроницаемым？
+              </h3>
+              <p class="questions__item-text">
+                В Mavic 2 улучшены практически все аспекты: камера, передача видеосигнала, полётное время, скорость,
+                уровень
+                шума, обнаружение препятствий в нескольких направлениях, интеллектуальные функции и уникальная функция
+                Hyperlapse (гиперлапс).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll__btn">
+          <a class="scroll__btn__link" href="#5">
+            <img src="./images/arrow-down.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--==================== 6 screen ====================-->
+    <section class="page-section contacts">
+      <div class="page-section__wrapper">
+        <div class="container">
+          <h2 class="title contacts__title">
+            Контакты
+          </h2>
+          <div class="contacts__inner">
+            <div class="contacts__info">
+              <div class="contacts__info-box">
+                <p class="contacts__info-title">Киев</p>
+                <a class="contacts__info-phone" href="tel:+80505676767">+8 (050) 567– 67 – 67</a>
+                <a class="contacts__info-email" href="mailto:dgi.mavic2pro.kiev@mail.ru">dgi.mavic2pro.kiev@mail.ru</a>
+              </div>
+
+              <div class="contacts__info-box">
+                <p class="contacts__info-title">Москва</p>
+                <a class="contacts__info-phone" href="tel:+74995676767">+7 (499) 567– 67 – 67</a>
+                <a class="contacts__info-email"
+                  href="mailto:dgi.mavic2pro.moscow@mail.ru">dgi.mavic2pro.moscow@mail.ru</a>
+              </div>
+
+              <div class="contacts__info-box">
+                <p class="contacts__info-title">Минск</p>
+                <a class="contacts__info-phone" href="tel:+375175676767">+3 (7517) 567– 67 – 67</a>
+                <a class="contacts__info-email" href="mailto:dgi.mavic2pro.kiev@mail.ru">dgi.mavic2pro.minsk@mail.ru</a>
+              </div>
+            </div>
+            <div class="contacts__form">
+              <form action="">
+                <h3 class="contacts__form-title">
+                  Остались вопросы?
+                </h3>
+                <p class="contacts__form-text">
+                  Мы обязательно свяжемся с вами в течение двух рабочих дней
+                </p>
+                <div class="contacts__form-line">
+                  <input class="contacts__form-input" placeholder="Ваше имя" type="text">
+                  <input class="contacts__form-input" placeholder="Ваше e-mail" type="email">
+                </div>
+                <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
+                <button class="contacts__form-btn">
+                  ОТПРАВИТЬ
+                </button>
+              </form>
+            </div>
+            <div class="contacts__social">
+              <ul class="contacts__social-list">
+                <li class="contacts__social-item">
+                  <a href="#" class="contacts__social-link">
+                    <img src="./images/facebook.svg" alt="">
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a href="#" class="contacts__social-link">
+                    <img src="./images/youtube.svg" alt="">
+                  </a>
+                </li>
+                <li class="contacts__social-item">
+                  <a href="#" class="contacts__social-link">
+                    <img src="./images/instagram.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <footer class="footer">
+            <p class="footer__copy">
+              &#169; DJI, 2020
+            </p>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--==================== Js ====================-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

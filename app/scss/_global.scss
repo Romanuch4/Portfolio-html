@@ -1,0 +1,272 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: -webkit-fill-available;
+  height: 100vh;
+  color: #fff;
+  overflow-x: hidden;
+  @extend %ubuntu-light;
+  font-size: 17px;
+  line-height: 1.53;
+  overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font: inherit;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+svg {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* Preloader */
+
+.preloader {
+  position: fixed;
+  z-index: 10;
+  background-color: #093428;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    filter: url(#gooey);
+    animation: preloader 16s linear infinite;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: rotate(calc(45deg * var(--i)));
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: calc(50% - 20px);
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, #c7eeff, #03a9f4);
+      border-radius: 50%;
+      box-shadow: 0 0 30px #00bcd4;
+    }
+  }
+
+  &__item.rotate {
+    animation: preloader 4s ease-in-out infinite;
+    animation-delay: calc(-0.2s * var(--j));
+  }
+
+  &__svg {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+body.overflow {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-section {
+  position: relative;
+  background-image: url('../images/page-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5e5e57 100%);
+    mix-blend-mode: normal;
+    opacity: 0.15;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding: 74px 0 50px;
+  }
+}
+
+.title {
+  @extend %sf-regular;
+  margin-bottom: 55px;
+  padding-left: 25px;
+  padding-top: 20px;
+  font-size: 44px;
+  line-height: 1.205;
+}
+
+.scroll__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 13px 0 30px;
+  text-align: center;
+}
+
+.swiper-container {
+  max-width: 560px;
+  height: 300px;
+}
